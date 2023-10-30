@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+:root{
+    --color-background: #F0F0F0;
+    --color-input: #33363a;
+    --color-white: #ffffff;
+    --color-gray: #808080;
+    --color-red: #F12B2E;
+    --color-dark-red: #a01b1d;
+    --color-placeholder: #ca23269f;
+    --color-shadow: #00000040;
+    --color-footer: #111111;
+}
+
+* {
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+header {
+    padding: .5rem;
+}
+
+i {
+    color: var(--color-red);
+}
+
+.input-search {
+    border-radius: 50rem;
+    background-color: var(--color-input);
+    border: none !important;
+    color: var(--color-red) !important;
+}
+
+input:focus {
+    background-color: var(--color-input) !important;
+}
+
+::placeholder {
+    color: var(--color-placeholder) !important;
+}
+
+.bicycles-sale {
+    border-top: 0.5rem solid var(--color-red);
+}
+
+.type-bicycle {
+    border: none;
+    background-color: var(--color-dark-red);
+    color: var(--color-white);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.type-bicycle.active {
+    background-color: var(--color-red);
+}
+
+.type-bicycle-container {
+    display: none;
+}
+
+.type-bicycle-container.active {
+    display: block;
+}
+
+.card {
+    box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
+}
+
+.parcelas {
+    color: var(--color-gray);
+}
+
+.btn-comprar {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
+}
+
+footer {
+    background-color: var(--color-footer);  
+    color: var(--color-red);
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
