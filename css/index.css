@@ -51,8 +51,8 @@ input:focus {
     border: none;
     background-color: var(--color-dark-red);
     color: var(--color-white);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .type-bicycle.active {
@@ -82,6 +82,13 @@ input:focus {
     box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
 }
 
+.btn-add-carrinho {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
+}
+
 footer {
     background-color: var(--color-footer);  
     color: var(--color-red);
@@ -92,3 +99,4 @@ footer i {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+

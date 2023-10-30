@@ -1,3 +1,4 @@
+// Click menu tipos de bicicleta
 document.querySelectorAll(".type-bicycle").forEach(function(element) {
     element.addEventListener("click", function(event) {
         changeTypeBicycle(event.target.id);
