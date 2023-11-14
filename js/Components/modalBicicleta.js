@@ -16,8 +16,8 @@ function modalBicicleta(index, bicicleta) {
                                 <button type="button" class="btn btn-light rounded m-2">G</button>
                             </div>
                             <div class="text-center">
-                                <h3 class="mt-2">R$ ` + formatValue(bicicleta.valor) + `</h2>
-                                    <h4 class="parcelas">ou R$ ` + formatValue(bicicleta.valorParcela) + ` X12</h2>
+                                <h3 class="mt-2">` + bicicleta.valorAvista() + `</h2>
+                                    <h4 class="parcelas">ou ` + bicicleta.parcelamento() + `</h2>
                             </div>
                             <button type="button" class="btn btn-add-carrinho mx-auto d-block w-75 mt-3">Adicionar ao
                                 Carrinho</button>
@@ -33,12 +33,6 @@ function modalBicicleta(index, bicicleta) {
     </div>`;
 
     return modalBicicleta;
-}
-
-function formatValue(value) {
-    return value.toLocaleString('pt-BR', {
-        minimumFractionDigits: 2
-    });
 }
 
 export { modalBicicleta }
