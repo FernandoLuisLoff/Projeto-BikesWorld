@@ -61,6 +61,33 @@ document.querySelectorAll(".btn-limpar-carrinho").forEach(function(element) {
     });
 });
 
+// Evento finalizar carrinho
+document.querySelectorAll(".btn-finalizar-compra").forEach(function(element) {
+    element.addEventListener("click", function() {
+        if (localStorage.getItem('arrayItens') != null) {
+            if (localStorage.getItem('usuario') != null) {
+                Swal.fire({
+                    text: "Compra finalizada com sucesso!",
+                    icon: "success"
+                });
+
+                localStorage.removeItem('arrayItens');
+                listarCarrinho();
+            } else {
+                Swal.fire({
+                    text: "Cadastre um usuário antes de finalizar a compra!",
+                    icon: "error"
+                }); 
+            }
+        } else {
+            Swal.fire({
+                text: "Adicione produtos no carrinho antes de finalizar a compra!",
+                icon: "error"
+            });    
+        }
+    });
+});
+
 function insertItensArray(codBicicleta, tam, qtd) {
     let arrayItens = [];
     if (localStorage.getItem('arrayItens') != null) {

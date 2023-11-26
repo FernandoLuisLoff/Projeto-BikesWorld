@@ -76,11 +76,11 @@ input:focus {
 }
 
 .btn-comprar, .btn-finalizar-compra, .btn-add-carrinho,
-.btn-cadastrar, .btn-desconectar {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    background-color: var(--color-red);
-    box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
+.btn-cadastrar, .btn-desconectar, .swal2-confirm {
+    font-size: 1.5rem !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-red) !important;
+    box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow) !important;
 }
 
 .btn-tam-bicicleta {

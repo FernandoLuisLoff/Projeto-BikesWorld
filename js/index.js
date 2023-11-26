@@ -6,6 +6,7 @@ import { modalBicicleta } from "./Components/modalBicicleta.js";
 import { arrayBicicletas } from "./bicicletas.js";
 import { addItem } from "./carrinho.js";
 import { preencheDadosUsuario } from "./usuario.js";
+import { listarCarrinho } from "./carrinho.js";
 
 window.onload = () => {
     // Carrega o header da tela
@@ -50,6 +51,11 @@ function inicializarCardsBicicletas(bicicletas) {
             document.querySelectorAll(".btn-add-carrinho").forEach(function(element) {
                 element.addEventListener("click", function(event) {
                     addItem(event.target.value);
+
+                    Swal.fire({
+                        text: "Produto adicionado com sucesso",
+                        icon: "success"
+                    });
                 });
             });
 
