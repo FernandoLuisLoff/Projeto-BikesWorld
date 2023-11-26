@@ -75,18 +75,23 @@ input:focus {
     color: var(--color-gray);
 }
 
-.btn-comprar {
+.btn-comprar, .btn-finalizar-compra, .btn-add-carrinho,
+.btn-cadastrar, .btn-desconectar {
     font-size: 1.5rem;
     color: var(--color-white);
     background-color: var(--color-red);
     box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
 }
 
-.btn-add-carrinho {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    background-color: var(--color-red);
+.btn-tam-bicicleta {
+    background-color: #e0e0e0;
     box-shadow: 0.3rem 0.3rem 0.25rem 0 var(--color-shadow);
+    flex-grow: 1;
+}
+
+.btn-tam-bicicleta.active {
+    background-color: #f7f7f7;
+    box-shadow: 0.15rem 0.075rem 0.25rem 0 var(--color-shadow);
 }
 
 footer {
@@ -100,3 +105,11 @@ footer i {
     margin-right: 1.5rem;
 }
 
+.imgDataTable {
+    height: 5rem;
+    width: 5rem;
+}
+
+.error-message {
+    color: var(--color-red);
+}
