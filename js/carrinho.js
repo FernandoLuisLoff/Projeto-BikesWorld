@@ -196,7 +196,7 @@ function listarCarrinho() {
                 item.qtd
             );
             valorTotal = valorTotal + (bicicleta.valor*item.qtd);
-            qtdTotal = qtdTotal + item.qtd;
+            qtdTotal = qtdTotal + parseInt(item.qtd);
             indice++;
         });
     }    
@@ -232,7 +232,7 @@ function inpQtdDataTable(codItem, qtd) {
 
 function btnExcDataTable(codItem) {
     return `<button class="btn btn-danger btn-xs btn-exc-item" id="btn-exc-`+codItem+`">
-        <span class="fa fa-trash btn-exc-item" id="btn-exc-`+codItem+`"></span>
+        <span class="fa fa-trash"></span>
     </button>`;
 }
 

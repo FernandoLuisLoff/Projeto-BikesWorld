@@ -1,5 +1,5 @@
 const headerComponent = `<header class="position-absolute top-0 start-50 translate-middle-x w-75 rounded-bottom bg-dark bg-gradient">
-    <div class="d-flex flex-row text-center h-100 w-100">
+    <div class="d-flex align-items-center justify-content-between text-center h-100 w-100">
         <div class="col-2">
             <img class="img-fluid" src="./img/Logo.png" alt="Logo">
         </div>
@@ -9,7 +9,7 @@ const headerComponent = `<header class="position-absolute top-0 start-50 transla
                 <input type="text" class="form-control input-search" placeholder="Pesquisar...">
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-2 d-flex align-items-center justify-content-end">
             <button id="btn-carrinho" class="btn btn-transparent btn-icon position-relative" type="button" data-bs-toggle="modal" data-bs-target="#modal-carrinho">
                 <i class="fa-solid fa-cart-shopping fs-1"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
